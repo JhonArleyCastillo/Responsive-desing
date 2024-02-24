@@ -12,7 +12,7 @@ header,
     width: 30%;
 }
 
-.content {
+#content {
     min-height: 200px;
     display: inline-block;
     background: lightgrey;
@@ -24,9 +24,10 @@ header,
     .page {
       display: block;
     }
-    .content{
+    #content{
         width: 100%;
         background: aqua;
+        display: none;
     }
     .menu{
         width: 100%;
@@ -38,8 +39,8 @@ header,
     .menu {
       background: red;
     }
-    .content{
-        background: black;
+    #content{
+        background: white;
     }
   }
 

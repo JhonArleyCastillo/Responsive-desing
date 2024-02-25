@@ -1,17 +1,22 @@
 header,
-.page,footer{
-    min-height: 200px;
-    background: grey;
+footer{
+    min-height: 50px;
+    background: white;
     display: flex;
 }
 
-.menu {
-    min-height: 200px;
-    display: inline-block;
+.caja1,.caja2,.caja3,.caja4 {
+    height: 465px;
+    width: 350px;
     background: blue;
-    width: 30%;
+    float: left;
 }
 
+img{
+    margin: 2px;
+    height: 200px;
+    width: 200px;
+}
 #content {
     min-height: 200px;
     display: inline-block;
@@ -21,11 +26,8 @@ header,
 
 
 @media (width <= 600px) {
-    .page {
-      display: block;
-    }
-    #content{
-        width: 100%;
+    .content{
+        width: 2px;
         background: aqua;
         display: none;
     }
@@ -38,9 +40,11 @@ header,
 @media (601px <= width <= 1199px) {
     .menu {
       background: red;
+      display: flex;
     }
-    #content{
-        background: white;
+    .content{
+        background: blue;
+        display: flex;
     }
   }
 
